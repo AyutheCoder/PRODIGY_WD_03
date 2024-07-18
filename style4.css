@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("https://cdn.dribbble.com/users/317853/screenshots/7171395/media/f3dd86da92c3c331efa95c92fac941b4.png?resize=800x600&vertical=center");
+    background-repeat: repeat;
+     background-size: cover;
+    background-color: #8c52ff;
+}
+section {
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 75px;
+    box-shadow: 0px 10px 36px 16px rgba(0,0,0,0.1);
+    border:4px  solid #8c52ff;
+}
+.game--title {
+    padding-top: 20px;
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 150px;
+    margin: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* border:4px  solid #8c52ff; */
+}
+.cell {
+    font-family: "Poppins", sans-serif;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 20px;
+}
+button {
+    margin-bottom: 20px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #8c52ff;
+    cursor: pointer;
+}
+button:hover {
+    transition: 0.25s;
+    background-color: #c1a2fe;
+}
+@media (max-width: 600px) {
+    .game--container {
+        max-width: 200px;
+    }
+    /* .stopwatch-display {
+        font-size: 36px;
+    }
+    .stopwatch-visuals {
+        width: 80px;
+        height: 80px;
+    } */
+}
